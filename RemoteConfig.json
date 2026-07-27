@@ -1,5 +1,5 @@
 {
-    "version": "2026.07.26-1421",
+    "version": "2026.07.27-1450",
     "selectors": {
         "ad_showing": ".ad-showing, .ad-interrupting, .ytm-promoted-video-renderer, .ytp-ad-persistent-state, .ytm-ad-badge, ytm-ad-badge, .ytm-ad-action-button, [class*='ad-badge'], [class*='ad-container'], [id*='ad-container'], [class*='ad-display']",
         "skip_button": ".ytp-ad-skip-button, .ytm-skip-ad-button, .ad-skip-button, [class*='skip-ad'], [class*='ad-skip']",
