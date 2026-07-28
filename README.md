@@ -150,11 +150,6 @@ Arka planda kesintisiz çalışan, dünyanın her yerinden radyolara erişim sa�
 
 ---
 
-### 📲 Ekran Yansıtma ve Tersine Dokunmatik (Screen Mirroring & Reverse Touch)
-* **Çift Yönlü Kontrol:** Telefon ekranınızı sadece araca yansıtmakla (Cast) kalmaz, Android 14+ güvenlik protokolleriyle uyumlu Accessibility Service (Erişilebilirlik Servisi) altyapısı sayesinde **araç ekranından dokunarak telefonunuzu kontrol etmenizi (Touch Injection)** sağlar.
-
----
-
 ## 🛠️ Arayüz ve Mimari Detaylar (UI/UX Details)
 * **Yüzer Sürüklenebilir Menü Butonu (Draggable FAB):** Ekranın köşelerini kapatmaması için parmağınızla istediğiniz yere sürükleyebileceğiniz şeffaf yüzer buton (Z-index layering).
 * **Merkezi Kontrol Paneli (Center Modal Control Panel):** Sürüş esnasında dikkati dağıtmamak için tüm geçişleri ve kontrolleri tek bir ekranda toplayan göz yormayan Dark Mode uyumlu arayüz.
@@ -228,9 +223,6 @@ An intelligent module running seamlessly in the background, providing access to 
 ### 🌐 AdBlock YouTube & Web Browser
 * **Zero Ads:** Thanks to our proprietary JS Injection (AdBlocker Script) strategy, sponsored content and advertisements on YouTube or websites are blocked instantly before you even see them.
 * **View Control:** Customizable User-Agent spoofing to display Desktop/Mobile/Tablet views tailored specifically for vehicle screens.
-
-### 📲 Screen Mirroring & Reverse Touch
-* **Bi-Directional Control:** It doesn't just cast your phone screen to the vehicle; thanks to an Accessibility Service infrastructure fully compliant with Android 14+ security protocols, it allows you to **control your phone by touching the vehicle screen (Touch Injection)**.
 
 ---
 
