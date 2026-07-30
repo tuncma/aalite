@@ -1,6 +1,10 @@
 <p align="center">
   <img src="images/anaekran.png" width="700" alt="Auto Lite Ana Ekran">
 </p>
+  <p align="center"><em>İletişim / Contact</em><br>
+  <a href="https://t.me/autolitetr">
+    <img src="images/Telegram_Logo.svg" width="100" alt="Mesaj Atın">
+  </a></p>
 
 # 🚗 Auto Lite TR v4.0 - Ultimate Android Auto Entertainment & Multimedia Hub (No Root)
 
