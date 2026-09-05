@@ -1,9 +1,16 @@
 {
-    "version": "2026.07.27-1450",
-    "selectors": {
-        "ad_showing": ".ad-showing, .ad-interrupting, .ytm-promoted-video-renderer, .ytp-ad-persistent-state, .ytm-ad-badge, ytm-ad-badge, .ytm-ad-action-button, [class*='ad-badge'], [class*='ad-container'], [id*='ad-container'], [class*='ad-display']",
-        "skip_button": ".ytp-ad-skip-button, .ytm-skip-ad-button, .ad-skip-button, [class*='skip-ad'], [class*='ad-skip']",
-        "warning_modal": "tp-yt-paper-dialog, #error-screen, .yt-error-display-v2",
-        "overlay_cleanup": ".ytp-ad-player-overlay"
-    }
+  "version": "2.5.0",
+  "generated_at": "2026-09-05T11:37:08.332702Z",
+  "selectors_mobile": {
+    "ad_showing": ".ytm-promoted-video-renderer, .ytm-ad-badge, ytm-ad-badge, .ytm-ad-action-button, [class*='ytm-ad'], [class*='ad-badge']",
+    "skip_button": ".ytm-skip-ad-button, .ytm-skip-button, .ad-skip-button, [class*='skip-ad']",
+    "warning_modal": "tp-yt-paper-dialog, #error-screen, .yt-error-display-v2",
+    "overlay_cleanup": ".ytm-promoted-video-renderer"
+  },
+  "selectors_desktop": {
+    "ad_showing": ".ad-showing, .ad-interrupting, .ytp-ad-persistent-state, .ytp-ad-simple-ad-badge, .ytp-ad-player-overlay-layout, [class^='ytp-ad-'], [class*='-ad-module'], .ytd-display-ad-renderer, .ytd-promoted-sparkles-web-renderer",
+    "skip_button": ".ytp-ad-skip-button, .ytp-ad-skip-button-modern, .ytp-skip-ad-button, [class*='ytp-ad-skip']",
+    "warning_modal": "tp-yt-paper-dialog, #error-screen, .yt-mealbar-promo-renderer",
+    "overlay_cleanup": ".ytp-ad-player-overlay"
+  }
 }
