@@ -1,0 +1,34 @@
+name: RemoteConfig Otomatik Oluştur
+
+on:
+  push:
+    paths:
+      - 'selectors.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Python kur
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: PyYAML kur
+        run: pip install pyyaml
+
+      - name: JSON olustur
+        run: python .github/scripts/build_config.py
+
+      - name: Commit et ve push at
+        run: |
+          git config user.name "AutoLite Bot"
+          git config user.email "bot@autolite.app"
+          git add RemoteConfig.json
+          git diff --staged --quiet || git commit -m "RemoteConfig otomatik guncellendi"
+          git push
