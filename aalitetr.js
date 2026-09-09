@@ -1,111 +1,54 @@
-// AALite OTA AdBlock Engine v1.0
-// Bu kodu GitHub'daki aalitetr.js dosyanızın içine kopyalayınız.
-
+// AALite OTA AdBlock Engine v2.0 - Stabil Sürüm
+// DOM Tabanlı Hızlandırma ve Engelleyici
 (function() {
-    // 1. AĞ (NETWORK) SEVİYESİNDE REKLAM İMHA ETME (JSON Pruning)
-    // uBlock Origin mantığı: YouTube API yanıtlarındaki reklam nesnelerini sızmadan önce boşaltır.
-    const pruneAdPlacements = (text) => {
-        if (!text) return text;
-        try {
-            if (text.includes('"adPlacements"') || text.includes('"adSlots"')) {
-                // Regex ile adPlacements ve adSlots dizilerini sil (Videolar direkt başlar)
-                return text.replace(/"adPlacements"\s*:\s*\[.*?\}\]\s*,/gs, '')
-                           .replace(/"adSlots"\s*:\s*\[.*?\}\]\s*,/gs, '');
+    console.log("AALite AdBlock Engine Başlatıldı!");
+
+    // 1. DÜZEY: Hızlı Reklam Atlama ve İleri Sarma
+    setInterval(() => {
+        // "Reklamı Atla" butonlarını bul ve anında tıkla
+        const skipBtn = document.querySelector('.ytp-ad-skip-button, .ytp-ad-skip-button-modern, .ytp-skip-ad-button');
+        if (skipBtn) {
+            skipBtn.click();
+        }
+        
+        // Reklam oynuyorsa ve atla butonu çıkmadıysa, reklamı anında sonuna sar
+        const adVideo = document.querySelector('.ad-showing video') || document.querySelector('.html5-main-video[src*="googlevideo.com/videoplayback"]');
+        const adContainer = document.querySelector('.ytp-ad-player-overlay, .ytp-ad-showing');
+        
+        if (adContainer && adVideo && adVideo.currentTime > 0) {
+            adVideo.currentTime = adVideo.duration > 0 ? adVideo.duration - 0.1 : 9999;
+            adVideo.playbackRate = 16.0; // Reklamı 16x hızda tüket
+        }
+        
+        // Video içi banner reklamları gizle
+        const overlays = document.querySelectorAll(`
+            .ytp-ad-overlay-container,
+            .ytp-ad-message-container,
+            ytd-promoted-sparkles-web-renderer,
+            ytd-ad-slot-renderer,
+            ytd-in-feed-ad-layout-renderer,
+            .ytd-popup-container
+        `);
+        overlays.forEach(el => {
+            if (el && el.style.display !== 'none') {
+                el.style.display = 'none';
             }
-        } catch (e) {}
-        return text;
-    };
+        });
+    }, 300);
 
-    // fetch API'sini yakala
-    const originalFetch = window.fetch;
-    window.fetch = async function() {
-        const response = await originalFetch.apply(this, arguments);
-        const url = arguments[0];
-        if (typeof url === 'string' && (url.includes('/player') || url.includes('/get_watch') || url.includes('/next'))) {
-            const clone = response.clone();
-            const text = await clone.text();
-            const pruned = pruneAdPlacements(text);
-            return new Response(pruned, {
-                status: response.status,
-                statusText: response.statusText,
-                headers: response.headers
-            });
-        }
-        return response;
-    };
-
-    // XMLHttpRequest API'sini yakala
-    const originalXHR = XMLHttpRequest.prototype.open;
-    XMLHttpRequest.prototype.open = function(method, url) {
-        if (typeof url === 'string' && (url.includes('/player') || url.includes('/get_watch') || url.includes('/next'))) {
-            this.addEventListener('readystatechange', function() {
-                if (this.readyState === 4 && this.responseText) {
-                    try {
-                        const pruned = pruneAdPlacements(this.responseText);
-                        Object.defineProperty(this, 'responseText', { value: pruned, writable: false });
-                    } catch (e) {}
-                }
-            });
-        }
-        originalXHR.apply(this, arguments);
-    };
-
-    // 2. YOUTUBE ANTI-ADBLOCK CEZA BYPASS (Anomali Koruması)
-    // YouTube'un "reklam engellendi" cezasını (onAbnormalityDetected) hissetmemesi için Promise.then bypass'ı
-    const originalThen = Promise.prototype.then;
-    Promise.prototype.then = function(onFulfilled, onRejected) {
-        if (typeof onFulfilled === 'function' && onFulfilled.toString().includes('onAbnormalityDetected')) {
-            onFulfilled = function() {}; // Boşalt, ceza fonksiyonunu devre dışı bırak
-        }
-        return originalThen.call(this, onFulfilled, onRejected);
-    };
-
-    // 3. DOM SEVİYESİ FALLBACK (Mobil uyumlu, kaba kuvvet atlatma)
-    const checkAndSkipAd = () => {
-        try {
-            const isAd = document.querySelector('.ad-showing, .ad-interrupting, .ytm-ad-badge, ytm-ad-badge, [class*="ad-badge"]');
-            if (isAd) {
-                const video = document.querySelector('video');
-                if (video) {
-                    video.muted = true;
-                    video.playbackRate = 16.0; // Eski yöntemlerden miras
-                    // YouTube duration manipülasyonunu çökertmemek için prototype override
-                    try { Object.getOwnPropertyDescriptor(HTMLMediaElement.prototype, 'currentTime').set.call(video, 999999); } 
-                    catch(e) { video.currentTime = 999999; }
-                }
-                const skipBtn = document.querySelector('.ytp-ad-skip-button, .ytp-ad-skip-button-modern, .ytm-skip-ad-button');
-                if (skipBtn) skipBtn.click();
+    // 2. DÜZEY: Siyah/Gri Ekran Beklemesini Engelleme
+    // YouTube videoyu kasten bekletiyorsa zorla oynat
+    setInterval(() => {
+        const video = document.querySelector('.html5-main-video');
+        const isAdShowing = document.querySelector('.ytp-ad-showing');
+        
+        if (video && video.paused && !isAdShowing) {
+            const playBtn = document.querySelector('.ytp-play-button');
+            if (playBtn && playBtn.getAttribute('aria-label') && playBtn.getAttribute('aria-label').includes('Oynat')) {
+                // Eğer reklam bittiği halde YouTube asıl videoyu durdurduysa zorla oynat
+                playBtn.click();
             }
-            
-            // Reklam Engelleyici Uyarı Pencerelerini (Modal) Kapat
-            const warning = document.querySelector('tp-yt-paper-dialog, #error-screen, .yt-error-display-v2');
-            if (warning) {
-                const text = warning.innerText || '';
-                if (text.includes('ad blocker') || text.includes('reklam') || text.includes('ad-blocking')) {
-                    warning.remove();
-                    const v = document.querySelector('video');
-                    if (v) v.play();
-                }
-            }
-        } catch(e) {}
-    };
-
-    // 4. SPA (Single Page Application) KORUMA MOTORU
-    if (window.aaliteAdTimer) clearInterval(window.aaliteAdTimer);
-    window.aaliteAdTimer = setInterval(checkAndSkipAd, 500);
-
-    if (window.aaliteAdObserver) window.aaliteAdObserver.disconnect();
-    window.aaliteAdObserver = new MutationObserver(checkAndSkipAd);
-    window.aaliteAdObserver.observe(document.documentElement, { childList: true, subtree: true });
-
-    // 5. CSS HIDING (Afiş Reklamları İçin Görünmezlik)
-    try {
-        if (!document.getElementById('aalite-adblock-css')) {
-            const style = document.createElement('style');
-            style.id = 'aalite-adblock-css';
-            style.innerHTML = 'ytd-ad-slot-renderer, ytm-promoted-video-renderer, ytd-promoted-sparkles-web-renderer, .video-ads { display: none !important; }';
-            (document.head || document.documentElement).appendChild(style);
         }
-    } catch(e) {}
+    }, 1500);
+
 })();
-
