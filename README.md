@@ -1,14 +1,19 @@
 <p align="center">
-  <img src="images/anaekran.png" width="700" alt="Android Auto Lite Ana Ekran">
+  <img src="images/01_main_menu.png" width="700" alt="Android Auto Lite Ana Ekran">
 </p>
-  <p align="center"><em>İletişim / Contact</em><br>
+  <p align="center"><em>İletişim, Destek ve Demo Videoları</em><br>
   <a href="https://t.me/autolitetr">
-    <img src="images/Telegram_Logo.svg" width="100" alt="Mesaj Atın">
-  </a></p>
+    <img src="images/Telegram_Logo.svg" width="100" alt="Telegram Destek">
+  </a>
+  <br><br>;
+  <a href="https://www.youtube.com/@AutoLiteTr">
+    <img src="https://img.shields.io/badge/YouTube-Kurulum_&_Demolar-red?style=for-the-badge&logo=youtube" alt="YouTube Kurulum ve Demo">
+  </a>
+</p>
 
-# 🚗 Android Auto Lite TR (AALITE)- Ultimate Android Auto Entertainment & Multimedia Hub (No Root)
+# 🚗 Android Auto Lite TR (AALITE) - Ultimate Android Auto Entertainment & Multimedia Hub (No Root)
 
-[![GitHub release (latest by date)](https://img.shields.io/badge/Release-v4.0-blue.svg)](https://github.com/your-username/your-repo/releases/latest)
+[![GitHub release (latest by date)](https://img.shields.io/badge/Release-v5.0-blue.svg)](https://github.com/tuncma/aalite/releases/latest)
 [![Platform: Android Auto](https://img.shields.io/badge/Platform-Android%20Auto-brightgreen.svg)]()
 [![No Root Required](https://img.shields.io/badge/Root-Not%20Required-success.svg)]()
 
@@ -16,9 +21,9 @@
 
 # 🇹🇷 TÜRKÇE DOKÜMANTASYON (TURKISH)
 
-**Android Auto Lite TR **, Android Auto platformunun (Car App Library) katı kısıtlamalarını yıkarak; aracınızın bilgi-eğlence ekranını (Head Unit) tam teşekküllü bir multimedya merkezine dönüştüren, **Root gerektirmeyen (No Root required)**, üst düzey mimariye sahip kapalı kaynak (closed-source) bir uygulamadır.
+**Android Auto Lite TR**, Android Auto platformunun (Car App Library) katı kısıtlamalarını yıkarak; aracınızın bilgi-eğlence ekranını (Head Unit) tam teşekküllü bir multimedya merkezine dönüştüren, **Root gerektirmeyen (No Root required)**, üst düzey mimariye sahip kapalı kaynak (closed-source) bir uygulamadır.
 
-IPTV Player, Web Browser, YouTube for Android Auto, Screen Mirroring (Ekran Yansıtma) ve Global Internet Radio özelliklerini tek bir çatı altında toplayan Android Auto Lite; özellikle **Direksiyon Kumandası Entegrasyonu (Steering Wheel Controls Integration)**, **Uzak Cep Telefonu Yönetimi (Remote Phone Configuration)** ve **Kendi Geliştirdiğimiz Araç İçi Ekran Klavyesi (Custom Android Auto OSK)** ile sürücülere rakipsiz, eller serbest (hands-free) bir deneyim sunar.
+IPTV Player, Web Browser, YouTube for Android Auto, Screen Mirroring (Ekran Yansıtma), Global Internet Radio ve yepyeni **Local Media Player (USB/Telefon)** özelliklerini tek bir çatı altında toplayan Android Auto Lite; özellikle **Direksiyon Kumandası Entegrasyonu**, **Uzak Cep Telefonu Yönetimi** ve **Kendi Geliştirdiğimiz Araç İçi Ekran Klavyesi** ile sürücülere rakipsiz, eller serbest (hands-free) bir deneyim sunar.
 
 ---
 
@@ -32,38 +37,24 @@ Android Auto Lite TR uygulamasını Google'ın 3. parti uygulama kısıtlamalar�
 | :--- | :--- |
 | **Android 9.0 - 13.0** | ✅ **Tam Uyumlu:** [KingInstaller](https://github.com/fcaronte/KingInstaller) kullanılarak hiçbir sorun yaşanmadan, tek tıkla kolayca kurulabilir. |
 | **Android 14.0 - 15.0** | ⚠️ **Kısmi Uyumlu:** Cihaz marka, model ve OEM arayüz güvenlik kısıtlamalarına bağlı olarak bazı cihazlarda istisnai durumlar veya kurulum engelleri yaşanabilir. |
-| **Android 16.0** | 🔒 **Özel Test Aşamasında:** KingInstaller desteklememektedir! Android 16 için yalnızca Google Play kapalı test altyapısı üzerinden yükleme yapılabilmektedir. (Google Play'in kısıtlı tester kontenjanı nedeniyle her isteyene test erişimi verilememektedir). |
+| **Android 16.0** | 🔒 **Özel Test Aşamasında:** KingInstaller desteklememektedir! Android 16 için yalnızca Google Play kapalı test altyapısı üzerinden yükleme yapılabilmektedir. |
 
 > 📌 **Kurulum İpucu:** `KingInstaller` uygulamasını yükledikten sonra, indirdiğiniz `Android Auto Lite TR .apk` dosyasını KingInstaller içerisinden seçin ve **"Install as King"** butonuna basarak yüklemeyi tamamlayın.
-
----
-
-## 🎥 Test Videosu ve Demo
-
-Uygulamanın araç içi performansını, direksiyon kumandası kullanımını, özel ekran klavyesini ve arayüz dinamiklerini aşağıdaki demo videolarından inceleyebilirsiniz:
-
-<p align="center">
-  <a href="https://youtu.be/hhLW9V4_sc8">
-    <img src="https://img.youtube.com/vi/hhLW9V4_sc8/maxresdefault.jpg" width="600" alt="Android Auto Lite Tanıtım Videosu">
-  </a>
-</p>
-<p align="center">
-  <b>📺 <a href="https://youtu.be/hhLW9V4_sc8">Tanıtım Videosunu YouTube Üzerinde İzlemek İçin Buraya Tıklayın</a></b><br>
-  <i>(Proje içindeki test videoları: <code>images/test_video_1.mp4</code> ve <code>images/20260724_113134_fb_optimized.mp4</code>)</i>
-</p>
+> 
+> 📺 **Video Rehberler:** Kurulum detayları, direksiyon kumandası testleri ve arayüz demoları için [AutoLiteTR YouTube Kanalımızı](https://www.youtube.com/@AutoLiteTr) inceleyebilirsiniz.
 
 ---
 
 ## 🌟 Öne Çıkan Özellikler ve Teknik Mimari (Core Features)
 
 ### 📱 Telefondan Anlık ve Detaylı Yönetim (Real-Time Configuration)
-Araçtayken ekrana dokunup ayar aramakla uğraşmayın! Android Auto Lite, son derece gelişmiş bir **Mobil Uygulama Kontrol Paneli** sunar. Cep telefonunuzdaki ayar menüsünden bir değişiklik yaptığınız an; `OnSharedPreferenceChangeListener` mimarisi sayesinde **milisaniyeler içinde araç ekranındaki görüntü yenilenir**.
+Araçtayken ekrana dokunup ayar aramakla uğraşmayın! Android Auto Lite, son derece gelişmiş bir **Mobil Uygulama Kontrol Paneli** sunar. Cep telefonunuzdan yaptığınız bir değişiklik; `OnSharedPreferenceChangeListener` mimarisi sayesinde **milisaniyeler içinde araç ekranındaki görüntüye yansır**.
 
 <p align="center">
   <table>
     <tr>
-      <td align="center"><b>📱 Telefondan Yönetim Menüsü</b><br><img src="images/c_anamenu.png" width="260"></td>
-      <td align="center"><b>🚗 Araç Ekranına Anlık Yansıma</b><br><img src="images/anaekran.png" width="460"></td>
+      <td align="center" valign="middle"><b>📱 Telefondan Yönetim Menüsü</b><br><img src="images/12_settings_menu.png" height="300"></td>
+      <td align="center" valign="middle"><b>🚗 Araç Ekranına Anlık Yansıma</b><br><img src="images/01_main_menu.png" height="300"></td>
     </tr>
   </table>
 </p>
@@ -71,93 +62,76 @@ Araçtayken ekrana dokunup ayar aramakla uğraşmayın! Android Auto Lite, son d
 ---
 
 ### 🛞 Tam Direksiyon Kumandası Entegrasyonu (Steering Wheel Controls)
-Sürüş güvenliğini bozmadan maksimum kontrol! Uygulamamız, aracınızın donanımsal medya tuşlarıyla kusursuz konuşmak için `MediaSessionCompat` ve Android Auto donanım API'lerini doğrudan kullanır.
+Sürüş güvenliğini bozmadan maksimum kontrol! Uygulamamız, aracınızın donanımsal medya tuşlarıyla kusursuz konuşmak için `MediaSessionCompat` API'lerini doğrudan kullanır.
+* **YouTube Entegrasyonu:** Direksiyon kumandanız YouTube izlerken de aktif! İleri/geri tuşlarıyla YouTube'da doğrudan **sonraki veya önceki videoya** geçiş yapabilir, videoları durdurup başlatabilirsiniz.
+* **Tüm Modüllerde Akıllı Zapping (IPTV, Radyo & Yerel Medya):** Direksiyondaki tuşlarla binlerce M3U kanalı, internet radyosu istasyonları veya USB belleğinizdeki müzikler arasında gözünüzü yoldan ayırmadan, saniyeler içinde muazzam bir rahatlıkla geçiş (zapping) yapın.
 
-* **YouTube Entegrasyonu (JS Injection):** Sadece IPTV değil, **YouTube izlerken de direksiyon kumandanız aktif!** Direksiyondan ileri/geri (Next/Prev) tuşlarına basarak YouTube videolarını 10 saniye ileri/geri sarabilir, oynatıp duraklatabilirsiniz.
-* **IPTV ve Radyo (Zapping):** Direksiyondaki tuşlarla binlerce M3U kanalı veya internet radyosu arasında saniyeler içinde geçiş yapın.
+---
+
+### 🎵 YENİ! Yerel Medya Motoru (USB & Telefon Hafızası)
+Araç USB belleğinize taktığınız müzik ve videoları yüksek hızda listeler. `RecyclerView` mimarisi sayesinde binlerce şarkı gecikme yaşatmaz.
+* **Gerçek Zamanlı Arama:** Arama kutusu ile yazarken anında filtreleme. Müziklerinize anında ulaşın.
+* **Görsel Spektrum:** Şık animasyonlu barlar eşliğinde müzik dinletisi.
 
 <p align="center">
-  <img src="images/tube5.png" width="45%" alt="YouTube Direksiyon Kontrolü 1">
-  <img src="images/tube6.png" width="45%" alt="YouTube Direksiyon Kontrolü 2">
+  <table>
+    <tr>
+      <td align="center" valign="middle"><b>🎵 Yerel Medya Oynatıcı</b><br><img src="images/10_local_media_player.png" height="300"></td>
+      <td align="center" valign="middle"><b>📱 Medya Ayarları</b><br><img src="images/17_settings_local_media.png" height="300"></td>
+    </tr>
+  </table>
+</p>
+
+---
+
+### 📺 Gelişmiş Canlı TV Motoru (Advanced IPTV Player)
+ExoPlayer donanım ivmelendirmesi ile güçlendirilmiş, takılmasız canlı TV deneyimi. Binlerce kanallık M3U listelerini saniyeler içinde parse eder.
+
+<p align="center">
+  <img src="images/08_iptv_channels.png" width="48%" alt="Kanal Listesi">
+  <img src="images/07_iptv_live.png" width="48%" alt="Canlı TV">
+</p>
+
+---
+
+### 📻 Akıllı Radyo & 🔊 Evrensel Ses Yönetimi (Universal Audio Focus)
+Dünyanın her yerinden binlerce radyoya erişin ve ses çakışmalarını unutun!
+* **Universal Audio Focus:** Yeni geliştirdiğimiz sistemle Android Auto'nun `CarAudioManager` donanımına tam entegre olduk. YouTube, IPTV, Radyo veya USB Müzik... Birini açtığınızda diğerleri akıllıca susturulur veya duraklatılır! Ses çakışmasına son.
+* **Dinamik Ses Spektrumu (Visualizer):** Müziğin ritmine göre hareket eden, donanım ivmeli görsel animasyonlar.
+
+<p align="center">
+  <table>
+    <tr>
+      <td align="center" valign="middle"><b>📻 Radyo Visualizer</b><br><img src="images/09_radio_player.png" height="300"></td>
+      <td align="center" valign="middle"><b>📱 Radyo Ayarları</b><br><img src="images/16_settings_radio.png" height="300"></td>
+    </tr>
+  </table>
 </p>
 
 ---
 
 ### ⌨️ Özel Araç İçi Ekran Klavyesi (Custom On-Screen Keyboard)
-Google'ın Android Auto üzerindeki 3. parti uygulamalara uyguladığı "klavye açılamaz" (No Keyboard Support) limitini tamamen hack-free bir yöntemle aştık! Android Auto Lite, kendi UI katmanında (Canvas) özel olarak render edilen akıllı bir dokunmatik klavyeye (`Custom OSK for Android Auto`) sahiptir.
+Google'ın Android Auto üzerindeki 3. parti uygulamalara uyguladığı "klavye açılamaz" (No Keyboard Support) limitini tamamen hack-free bir yöntemle aştık! Akıllı ve dev ekran klavyemiz kendi UI katmanında (Canvas) özel olarak render edilir.
 
 <p align="center">
-  <img src="images/tube3.png" width="30%" alt="YouTube Arama Klavyesi">
-  <img src="images/iptv3.png" width="30%" alt="IPTV Kanal Arama">
-  <img src="images/web2.png" width="30%" alt="Web URL Girişi">
-</p>
-
----
-
-### 📺 Gelişmiş Canlı TV Motoru (Advanced IPTV Player & M3U Parser)
-ExoPlayer donanım ivmelendirmesi (Hardware Acceleration) ile güçlendirilmiş, takılmasız canlı TV deneyimi. Binlerce kanallık M3U listelerini saniyeler içinde parse eden motor, akıllı önbellekleme ve favori yönetim sistemine sahiptir.
-
-<p align="center">
-  <table>
-    <tr>
-      <td align="center"><b>📱 Telefon IPTV Ayarları</b><br><img src="images/c_iptv.png" width="220"></td>
-      <td align="center"><b>📺 Araç İçi Kanal Listesi</b><br><img src="images/iptv1.png" width="380"></td>
-      <td align="center"><b>📺 Canlı TV Tam Ekran</b><br><img src="images/iptv2.png" width="380"></td>
-    </tr>
-  </table>
-</p>
-
----
-
-### 📻 Akıllı Radyo Modülü (Intelligent Web Radio & Audio Focus)
-Arka planda kesintisiz çalışan, dünyanın her yerinden radyolara erişim sağlayan akıllı modül.
-
-* **Ses Odaklanması Çatışma Çözümü (Audio Focus Handling):** Android Auto'nun `CarAudioManager` sistemiyle tam entegre çalışır. IPTV veya başka bir kaynaktan radyoya geçtiğinizde ses kanallarını mükemmel yönetir.
-* **Fail-Safe Server Routing:** Global API çökse bile (502 Bad Gateway), sistem otomatik olarak en stabil aktif sunucuya bağlanır.
-* **Dinamik Ses Spektrumu (Audio Visualizer):** Müziğin ritmine göre hareket eden, donanım ivmeli görsel animasyonlar.
-
-<p align="center">
-  <table>
-    <tr>
-      <td align="center"><img src="images/c_radyo1.png" width="200"><br><b>📱 Radyo Ayarları</b></td>
-      <td align="center"><img src="images/c_radyo2.png" width="200"><br><b>📱 İstasyon Listesi</b></td>
-      <td align="center"><img src="images/radyo1.png" width="320"><br><b>📻 Visualizer Ekranı</b></td>
-      <td align="center"><img src="images/radyo2.png" width="320"><br><b>📻 Gece Modu Visualizer</b></td>
-    </tr>
-  </table>
+  <img src="images/05_youtube_search.png" width="48%" alt="Arama Modu">
+  <img src="images/06_keyboard.png" width="48%" alt="Ekran Klavyesi">
 </p>
 
 ---
 
 ### 🌐 Reklam Engelleyicili Tarayıcı ve YouTube (AdBlock & Web Browser)
-* **Sıfır Reklam:** Geliştirdiğimiz özel JS Injection (AdBlocker Script) stratejisi sayesinde YouTube veya web sitelerindeki sponsorlu içerikler ve reklamlar siz görmeden anında engellenir.
-* **Görünüm Kontrolü:** Özelleştirilebilir User-Agent spoofing ile araç ekranına özel Masaüstü/Mobil/Tablet görünümleri.
+* **Sıfır Reklam:** Özel JS Injection (AdBlocker Script) stratejisi sayesinde YouTube veya web sitelerindeki sponsorlu içerikler ve reklamlar anında engellenir.
+* **Kusursuz Görüntü (Anti-Aliasing):** Tüm arayüzdeki ikonlar (Geri tuşu, Arama vs.) modern `AppCompatImageView` vektör motoruna taşınarak her ekranda pürüzsüz cam gibi görünmesi sağlandı.
 
 <p align="center">
-  <table>
-    <tr>
-      <td align="center"><img src="images/c_tube1.png" width="200"><br><b>📱 YouTube Çözünürlük</b></td>
-      <td align="center"><img src="images/c_tube2.png" width="200"><br><b>📱 AdBlock Ayarı</b></td>
-      <td align="center"><img src="images/tube1.png" width="320"><br><b>🚗 YouTube Arayüzü</b></td>
-      <td align="center"><img src="images/tube2.png" width="320"><br><b>🚗 Reklam-Sız Oynatma</b></td>
-    </tr>
-  </table>
+  <img src="images/02_youtube_home.png" width="48%" alt="YouTube Arayüz">
+  <img src="images/03_youtube_player.png" width="48%" alt="YouTube Video Önerileri">
 </p>
 <p align="center">
-  <table>
-    <tr>
-      <td align="center"><img src="images/c_web.png" width="220"><br><b>📱 Web Tarayıcı Ayarları</b></td>
-      <td align="center"><img src="images/web1.png" width="450"><br><b>🌐 Araç İçi Web Tarayıcı Deneyimi</b></td>
-    </tr>
-  </table>
+  <img src="images/04_youtube_fullscreen.png" width="48%" alt="YouTube Tam Ekran">
+  <img src="images/11_web_browser.png" width="48%" alt="Web Tarayıcı">
 </p>
-
----
-
-## 🛠️ Arayüz ve Mimari Detaylar (UI/UX Details)
-* **Yüzer Sürüklenebilir Menü Butonu (Draggable FAB):** Ekranın köşelerini kapatmaması için parmağınızla istediğiniz yere sürükleyebileceğiniz şeffaf yüzer buton (Z-index layering).
-* **Merkezi Kontrol Paneli (Center Modal Control Panel):** Sürüş esnasında dikkati dağıtmamak için tüm geçişleri ve kontrolleri tek bir ekranda toplayan göz yormayan Dark Mode uyumlu arayüz.
-* **Durum Kurtarma ve Otomatik Devam (State Recovery & Auto-Resume):** Uygulamayı kapatıp açtığınızda, en son izlediğiniz kanal veya radyo kaldığı yerden saniyeler içinde otomatik başlar.
 
 ---
 
@@ -180,9 +154,9 @@ Bu iş fırsatını değerlendirmek ve kendi Android Auto projenizi başlatmak i
 
 # 🚗 Android Auto Lite TR - Ultimate Android Auto Entertainment & Multimedia Hub (No Root)
 
-**Android Auto Lite TR ** is a closed-source application featuring a high-end architecture that breaks down the strict limitations of the Android Auto platform (Car App Library). It transforms your vehicle's infotainment screen (Head Unit) into a fully-fledged multimedia hub **without requiring any Root access (No Root required)**.
+**Android Auto Lite TR** is a closed-source application featuring a high-end architecture that breaks down the strict limitations of the Android Auto platform (Car App Library). It transforms your vehicle's infotainment screen (Head Unit) into a fully-fledged multimedia hub **without requiring any Root access (No Root required)**.
 
-Bringing together an IPTV Player, Web Browser, YouTube for Android Auto, Screen Mirroring, and Global Internet Radio under a single roof, Android Auto Lite offers drivers an unrivaled, hands-free experience—especially through its **Steering Wheel Controls Integration**, **Remote Phone Configuration**, and our proprietary **Custom Android Auto OSK (On-Screen Keyboard)**.
+Bringing together an IPTV Player, Web Browser, YouTube for Android Auto, Screen Mirroring, Global Internet Radio, and our brand new **Local Media Player (USB/Phone)** under a single roof, Android Auto Lite offers drivers an unrivaled, hands-free experience—especially through its **Steering Wheel Controls Integration**, **Remote Phone Configuration**, and our proprietary **Custom Android Auto OSK (On-Screen Keyboard)**.
 
 ---
 
@@ -196,9 +170,11 @@ To bypass Google's 3rd-party app restrictions on Android Auto and display Androi
 | :--- | :--- |
 | **Android 9.0 - 13.0** | ✅ **Fully Compatible:** Seamless, one-click installation via [KingInstaller](https://github.com/fcaronte/KingInstaller) with zero issues. |
 | **Android 14.0 - 15.0** | ⚠️ **Partially Compatible:** Installation stability may vary depending on device brand, model, and OEM software security restrictions. |
-| **Android 16.0** | 🔒 **Closed Testing Only:** Not supported via KingInstaller! Installation for Android 16 is restricted strictly to Google Play Closed Testing infrastructure. (Due to limited tester slots by Google Play, test access cannot be granted to everyone). |
+| **Android 16.0** | 🔒 **Closed Testing Only:** Not supported via KingInstaller! Installation for Android 16 is restricted strictly to Google Play Closed Testing infrastructure. |
 
 > 📌 **Installation Tip:** After installing `KingInstaller`, select the downloaded `Android Auto Lite TR .apk` file from inside KingInstaller and click the **"Install as King"** button to complete the setup.
+>
+> 📺 **Video Guides:** For detailed installation tutorials, steering wheel control tests, and UI demos, please visit our [AutoLiteTR YouTube Channel](https://www.youtube.com/@AutoLiteTr).
 
 ---
 
@@ -209,31 +185,27 @@ No more struggling to navigate settings by touching the vehicle screen while on 
 
 ### 🛞 Advanced Steering Wheel Controls
 Maximum control without compromising driving safety! Our application directly utilizes `MediaSessionCompat` and Android Auto hardware APIs to communicate flawlessly with your vehicle's physical media buttons.
-* **YouTube Integration (JS Injection):** Your steering wheel controls remain active **not only during IPTV playback but also while watching YouTube!** Fast-forward/rewind YouTube videos by 10 seconds, play, and pause simply by pressing the Next/Prev buttons on your steering wheel.
-* **IPTV & Radio Zapping:** Easily switch between thousands of M3U channels or internet radio stations in seconds using physical buttons.
+* **YouTube Integration:** Your steering wheel controls remain active while watching YouTube! Easily skip directly to the **next or previous video**, play, and pause simply by pressing the physical buttons on your steering wheel.
+* **Seamless Zapping across All Modules:** Switch effortlessly between thousands of IPTV channels, global web radio stations, or your Local Media (USB) tracks in seconds using your steering wheel controls—without ever taking your eyes off the road.
 
-### ⌨️ Custom In-Car On-Screen Keyboard
-We bypassed Google's "No Keyboard Support" restriction imposed on 3rd-party apps on Android Auto using a completely hack-free method! Android Auto Lite features an intelligent touch keyboard (`Custom OSK for Android Auto`) specially rendered on its own UI layer (Canvas).
+### 🎵 NEW! Local Media Engine (USB & Phone Storage)
+Instantly loads music and videos stored on your car's USB drive or phone memory. Thanks to our new `RecyclerView` architecture, scrolling through thousands of files is lag-free.
+* **Real-Time Search:** Type using the OSK and instantly filter results.
+* **Visual Spectrum:** Enjoy your offline music with stylish visual equalizer bars.
 
 ### 📺 Advanced IPTV Player & M3U Parser
-A stutter-free live TV experience powered by ExoPlayer Hardware Acceleration. Features a robust engine that parses M3U playlists with thousands of channels in mere seconds, complete with dynamic categories and smart caching.
+A stutter-free live TV experience powered by ExoPlayer Hardware Acceleration. Parses M3U playlists with thousands of channels in mere seconds.
 
-### 📻 Intelligent Web Radio & Audio Focus Management
-An intelligent module running seamlessly in the background, providing access to global radio stations.
-* **Audio Focus Handling:** Fully integrated with Android Auto's `CarAudioManager` system. When switching to the radio from IPTV or another source, it manages audio channels perfectly without causing sound clipping.
-* **Fail-Safe Server Routing:** Even if the global API crashes (502 Bad Gateway), the system automatically connects to the most stable active server.
+### 📻 Intelligent Web Radio & 🔊 Universal Audio Focus
+* **Universal Audio Focus System:** Fully integrated with Android Auto's `CarAudioManager`. Say goodbye to overlapping audio! Whether you launch YouTube, IPTV, Radio, or Local Media, the system intelligently pauses or stops the background audio source.
 * **Dynamic Audio Visualizer:** Hardware-accelerated visual animations that move to the rhythm of the music.
+
+### ⌨️ Custom In-Car On-Screen Keyboard
+We bypassed Google's "No Keyboard Support" restriction imposed on 3rd-party apps on Android Auto using a completely hack-free method! Android Auto Lite features an intelligent touch keyboard specially rendered on its own UI layer (Canvas).
 
 ### 🌐 AdBlock YouTube & Web Browser
 * **Zero Ads:** Thanks to our proprietary JS Injection (AdBlocker Script) strategy, sponsored content and advertisements on YouTube or websites are blocked instantly before you even see them.
-* **View Control:** Customizable User-Agent spoofing to display Desktop/Mobile/Tablet views tailored specifically for vehicle screens.
-
----
-
-## 🛠️ UI/UX & Architecture Details
-* **Draggable FAB (Floating Action Button):** A transparent floating button that you can drag anywhere with your finger so it doesn't obstruct screen corners (Z-index layering).
-* **Center Modal Control Panel:** An eye-friendly, Dark Mode-compatible interface that gathers all transitions and controls on a single screen to prevent distraction while driving.
-* **State Recovery & Auto-Resume:** When you close and reopen the application, your last watched channel or radio station automatically resumes from where it left off in seconds.
+* **Flawless Vector Rendering (Anti-Aliasing):** All UI icons (such as Back or Search buttons) have been upgraded to `AppCompatImageView` to prevent pixelation, ensuring crystal-clear visuals on all head unit screens.
 
 ---
 
@@ -242,10 +214,9 @@ We can customize this massive infrastructure specifically for your brand:
 * **Your Brand:** Custom application name and logos determined by you.
 * **Dedicated Infrastructure:** A unique package name (`com.yourcompany.appname`) belonging entirely to you.
 * **High-End Security:** Code protection with unbreakable, advanced encryption (Obfuscation / ProGuard).
-* **Independent Revenue:** Ready-to-deploy, signed `.aab` packages that you can directly upload to your own **Google Play Developer** account and manage the entire revenue model independently.
+* **Independent Revenue:** Ready-to-deploy, signed `.aab` packages that you can directly upload to your own **Google Play Developer** account.
 
 Feel free to get in touch to discuss details, evaluate this business opportunity, and launch your own Android Auto project.
 
 ---
-
-*This robust Android Auto application is designed to push the limits of Car App Development, bypassing generic OEM restrictions to deliver a true in-car entertainment system. Includes complex implementations of ExoPlayer, WebView JS Injection, MediaSessionCompat, and SharedPreferences synchronization. (Closed-Source)*
+*This robust Android Auto application is designed to push the limits of Car App Development, bypassing generic OEM restrictions to deliver a true in-car entertainment system. Includes complex implementations of ExoPlayer, WebView JS Injection, MediaSessionCompat, Universal Audio Focus and SharedPreferences synchronization. (Closed-Source)*
